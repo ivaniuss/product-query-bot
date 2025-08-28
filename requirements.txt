@@ -1,0 +1,11 @@
+faiss-cpu
+fastapi[standard]
+httpx
+langchain
+langchain-community
+langchain-openai
+langgraph
+pytest
+pytest-asyncio
+pytest-cov
+python-dotenv

@@ -37,6 +37,19 @@ pip install -r requirements.txt
 cp .env.example .env
 # Edit .env and add your OPENAI_API_KEY
 ```
+#### 🔧 Configuration
+
+Environment variables (see `.env.example`):
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `OPENAI_API_KEY` | OpenAI API key (required) | - |
+| `EMBEDDING_MODEL` | Embedding model name | `text-embedding-3-small` |
+| `CHAT_MODEL` | Chat completion model | `gpt-3.5-turbo` |
+| `TOP_K` | Number of documents to retrieve | `3` |
+| `TEMPERATURE` | LLM temperature | `0.1` |
+| `MAX_TOKENS` | Maximum response tokens | `500` |
+| `VECTOR_STORE_PATH` | Vector store file path | `./data/vector_store` |
 
 ### 2. Running the Application
 
@@ -139,16 +152,5 @@ pytest tests/test_retrieval.py -v
 - `422`: Validation error
 - `500`: Internal server error
 
-## 🔧 Configuration
-
-Environment variables (see `.env.example`):
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `OPENAI_API_KEY` | OpenAI API key (required) | - |
-| `EMBEDDING_MODEL` | Embedding model name | `text-embedding-3-small` |
-| `CHAT_MODEL` | Chat completion model | `gpt-3.5-turbo` |
-| `TOP_K` | Number of documents to retrieve | `3` |
-| `TEMPERATURE` | LLM temperature | `0.1` |
-| `MAX_TOKENS` | Maximum response tokens | `500` |
-| `VECTOR_STORE_PATH` | Vector store file path | `./data/vector_store` |
+## ⏱️ Time Spent 
+- ~ 8 hours
